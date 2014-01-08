@@ -16,10 +16,11 @@
 		1AF9415A1496015E00A8D6E3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF941591496015E00A8D6E3 /* AppDelegate.m */; };
 		1AF9415D1496015E00A8D6E3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF9415C1496015E00A8D6E3 /* ViewController.m */; };
 		1AF941601496015E00A8D6E3 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AF9415E1496015E00A8D6E3 /* ViewController.xib */; };
+		7598D617187DB4DF00797264 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7598D616187DB4DF00797264 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1AA3130A1497554D0071FC5E /* JSInfiniteScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; path = JSInfiniteScrollView.h; sourceTree = "<group>"; };
+		1AA3130A1497554D0071FC5E /* JSInfiniteScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSInfiniteScrollView.h; sourceTree = "<group>"; };
 		1AA3130B1497554D0071FC5E /* JSInfiniteScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSInfiniteScrollView.m; sourceTree = "<group>"; };
 		1AF941451496015E00A8D6E3 /* InfiniteScrolling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InfiniteScrolling.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AF941491496015E00A8D6E3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -34,6 +35,7 @@
 		1AF9415B1496015E00A8D6E3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		1AF9415C1496015E00A8D6E3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1AF9415F1496015E00A8D6E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		7598D616187DB4DF00797264 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 		1AF9413A1496015E00A8D6E3 = {
 			isa = PBXGroup;
 			children = (
+				7598D616187DB4DF00797264 /* Default-568h@2x.png */,
 				1AF9414F1496015E00A8D6E3 /* InfiniteScrolling */,
 				1AF941481496015E00A8D6E3 /* Frameworks */,
 				1AF941461496015E00A8D6E3 /* Products */,
@@ -129,7 +132,7 @@
 		1AF9413C1496015E00A8D6E3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0500;
 			};
 			buildConfigurationList = 1AF9413F1496015E00A8D6E3 /* Build configuration list for PBXProject "InfiniteScrolling" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -155,6 +158,7 @@
 			files = (
 				1AF941541496015E00A8D6E3 /* InfoPlist.strings in Resources */,
 				1AF941601496015E00A8D6E3 /* ViewController.xib in Resources */,
+				7598D617187DB4DF00797264 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,7 +202,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -210,10 +219,15 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -222,13 +236,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";

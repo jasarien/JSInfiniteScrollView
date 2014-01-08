@@ -22,7 +22,7 @@
 @synthesize delegate = _delegate;
 @synthesize dataSource = _dataSource;
 
-- (id)initWithFrame:(CGRect)frame dataSource:(id <InfiniteScrollViewDataSource>)dataSource delegate:(id <InfiniteScrollViewDelegate>)delegate
+- (id)initWithFrame:(CGRect)frame dataSource:(id <JSInfiniteScrollViewDataSource>)dataSource delegate:(id <JSInfiniteScrollViewDelegate>)delegate
 {
 	if ((self = [super initWithFrame:frame]))
 	{

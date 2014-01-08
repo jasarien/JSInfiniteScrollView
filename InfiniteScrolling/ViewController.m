@@ -73,7 +73,7 @@
 - (UIView *)infiniteScrollView:(JSInfiniteScrollView*)scrollView viewForIndex:(NSUInteger)index
 {
 	UILabel *label = [[[UILabel alloc] initWithFrame:[scrollView bounds]] autorelease];
-	[label setTextAlignment:UITextAlignmentCenter];
+	[label setTextAlignment:NSTextAlignmentCenter];
 	[label setBackgroundColor:[_colours objectAtIndex:index]];
 	[label setText:[NSString stringWithFormat:@"Test %d", index]];
 	
